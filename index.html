@@ -13,30 +13,27 @@
 </head>
 <body>
     <div class="min-h-screen bg-gray-50">
-        <!-- Navigation -->
+        <!-- Navigation remains the same but simplified -->
         <nav class="bg-white shadow-sm">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
-                    <!-- Logo and Desktop Menu -->
                     <div class="flex">
                         <div class="flex-shrink-0 flex items-center">
                             <span class="text-2xl font-bold text-gray-900">SMAP</span>
                         </div>
-                        <!-- Desktop Menu -->
                         <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                            <a href="#specification" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            <a href="#status" class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Status
+                            </a>
+                            <a href="#abstract" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                Abstract
+                            </a>
+                            <a href="#specification" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                 Specification
-                            </a>
-                            <a href="#documentation" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                Documentation
-                            </a>
-                            <a href="#implementation" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                                Implementation
                             </a>
                         </div>
                     </div>
                     
-                    <!-- GitHub Link -->
                     <div class="hidden sm:flex items-center">
                         <a href="https://github.com/garethvjones/smap-protocol" class="text-gray-500 hover:text-gray-700">
                             GitHub
@@ -47,11 +44,10 @@
                     <div class="flex items-center sm:hidden">
                         <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
-                            <!-- Icon when menu is closed -->
+                            <!-- Icons remain the same -->
                             <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                             </svg>
-                            <!-- Icon when menu is open -->
                             <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                             </svg>
@@ -63,14 +59,14 @@
             <!-- Mobile menu -->
             <div class="hidden sm:hidden" id="mobile-menu">
                 <div class="pt-2 pb-3 space-y-1">
-                    <a href="#specification" class="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    <a href="#status" class="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                        Status
+                    </a>
+                    <a href="#abstract" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                        Abstract
+                    </a>
+                    <a href="#specification" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
                         Specification
-                    </a>
-                    <a href="#documentation" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
-                        Documentation
-                    </a>
-                    <a href="#implementation" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
-                        Implementation
                     </a>
                     <a href="https://github.com/garethvjones/smap-protocol" class="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
                         GitHub
@@ -79,7 +75,7 @@
             </div>
         </nav>
 
-        <!-- Hero section -->
+        <!-- RFC Header -->
         <div class="bg-white">
             <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
                 <div class="text-center">
@@ -87,50 +83,99 @@
                         SMAP Protocol
                     </h1>
                     <p class="mt-4 text-xl text-gray-500">
-                        The next generation of email security
+                        RFC Draft: Secure Mail Access Protocol Version 1.0
                     </p>
                 </div>
             </div>
         </div>
 
-        <!-- Main content -->
+        <!-- Main RFC Content -->
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-                <!-- Sidebar -->
+                <!-- RFC Navigation Sidebar -->
                 <div class="lg:col-span-1">
                     <nav class="space-y-1">
-                        <a href="#overview" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md px-3 py-2 flex items-center text-sm font-medium">
-                            Overview
+                        <a href="#status" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md px-3 py-2 flex items-center text-sm font-medium">
+                            Status of this Memo
                         </a>
-                        <a href="#specification" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md px-3 py-2 flex items-center text-sm font-medium">
-                            Specification
+                        <a href="#abstract" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md px-3 py-2 flex items-center text-sm font-medium">
+                            Abstract
+                        </a>
+                        <a href="#introduction" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md px-3 py-2 flex items-center text-sm font-medium">
+                            1. Introduction
+                        </a>
+                        <a href="#protocol-overview" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md px-3 py-2 flex items-center text-sm font-medium">
+                            2. Protocol Overview
+                        </a>
+                        <a href="#connection" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md px-3 py-2 flex items-center text-sm font-medium">
+                            3. Connection and Authentication
+                        </a>
+                        <a href="#message-format" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md px-3 py-2 flex items-center text-sm font-medium">
+                            4. Message Format
                         </a>
                         <a href="#security" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md px-3 py-2 flex items-center text-sm font-medium">
-                            Security Features
-                        </a>
-                        <a href="#implementation" class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group rounded-md px-3 py-2 flex items-center text-sm font-medium">
-                            Implementation Guide
+                            5. Security Considerations
                         </a>
                     </nav>
                 </div>
 
-                <!-- Documentation content -->
+                <!-- RFC Content -->
                 <div class="lg:col-span-2">
                     <div class="prose prose-indigo prose-lg text-gray-500 mx-auto">
-                        <section id="overview">
-                            <h2 class="text-3xl font-bold text-gray-900">
-                                Overview
-                            </h2>
+                        <section id="status">
+                            <h2 class="text-3xl font-bold text-gray-900">Status of this Memo</h2>
                             <p class="mt-4">
-                                SMAP (Secure Mail Access Protocol) is a next-generation email protocol designed to address the security and spam challenges of modern email communication. Built with security at its core, SMAP provides inherent protection against common email threats while maintaining compatibility with existing email infrastructure.
+                                This document specifies an Internet standards track protocol for the Internet
+                                community, and requests discussion and suggestions for improvements. Please
+                                refer to the current edition of the "Internet Official Protocol Standards"
+                                (STD 1) for the standardization state and status of this protocol.
                             </p>
                         </section>
 
-                        <section id="specification" class="mt-12">
-                            <h2 class="text-3xl font-bold text-gray-900">
-                                Protocol Specification
-                            </h2>
-                            <pre><code class="language-rust">
+                        <section id="abstract" class="mt-12">
+                            <h2 class="text-3xl font-bold text-gray-900">Abstract</h2>
+                            <p class="mt-4">
+                                This document describes SMAP (Secure Mail Access Protocol), a protocol
+                                designed to supersede SMTP and IMAP by providing inherent security,
+                                spam prevention, and modern mail handling capabilities. SMAP incorporates
+                                security at the protocol level rather than as an add-on, while
+                                maintaining backwards compatibility with existing email infrastructure.
+                            </p>
+                        </section>
+
+                        <section id="introduction" class="mt-12">
+                            <h2 class="text-3xl font-bold text-gray-900">1. Introduction</h2>
+                            <div class="mt-4">
+                                <h3 class="text-2xl font-bold text-gray-800">1.1 Purpose</h3>
+                                <p class="mt-2">
+                                    Electronic mail remains one of the most widely used forms of digital
+                                    communication. However, existing protocols (SMTP, IMAP) were designed
+                                    in an era before modern security threats and spam became prevalent.
+                                    SMAP addresses these challenges by incorporating security and spam
+                                    prevention directly into the protocol.
+                                </p>
+                            </div>
+                        </section>
+
+                        <section id="protocol-overview" class="mt-12">
+                            <h2 class="text-3xl font-bold text-gray-900">2. Protocol Overview</h2>
+                            <div class="mt-4">
+                                <h3 class="text-2xl font-bold text-gray-800">2.1 Protocol Layers</h3>
+                                <p class="mt-2">SMAP operates on four distinct layers:</p>
+                                <ul class="mt-4 list-disc list-inside space-y-2">
+                                    <li><strong>Transport Layer:</strong> TLS 1.3+ required, binary protocol format</li>
+                                    <li><strong>Authentication Layer:</strong> Identity verification, trust network integration</li>
+                                    <li><strong>Message Layer:</strong> Content handling, attachment management</li>
+                                    <li><strong>Security Layer:</strong> Encryption, spam prevention, trust verification</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <section id="message-format" class="mt-12">
+                            <h2 class="text-3xl font-bold text-gray-900">4. Message Format</h2>
+                            <div class="mt-4">
+                                <h3 class="text-2xl font-bold text-gray-800">4.1 Header Structure</h3>
+                                <pre><code class="language-rust">
 struct MessageHeader {
     version: u16,
     message_id: uuid,
@@ -139,39 +184,42 @@ struct MessageHeader {
     timestamp: u64,
     security: SecurityBlock
 }
-                            </code></pre>
-                        </section>
 
-                        <section id="documentation" class="mt-12">
-                            <h2 class="text-3xl font-bold text-gray-900">
-                                Documentation
-                            </h2>
-                            <p class="mt-4">
-                                Comprehensive documentation for the SMAP protocol, including detailed guides, 
-                                examples, and best practices for implementation. This section will be expanded 
-                                with detailed documentation as the protocol develops.
-                            </p>
+struct SecurityBlock {
+    pow_proof: ProofOfWork,
+    trust_tokens: TrustTokens,
+    signatures: Signatures,
+    route_verification: RouteProof
+}
+
+struct Identity {
+    public_key: [u8; 32],
+    address: String,
+    signature: [u8; 64],
+    verification_proof: [u8; 32]
+}
+                                </code></pre>
+                            </div>
                         </section>
 
                         <section id="security" class="mt-12">
-                            <h2 class="text-3xl font-bold text-gray-900">
-                                Security Features
-                            </h2>
-                            <ul class="mt-4 list-disc list-inside space-y-2">
-                                <li>End-to-end encryption by default</li>
-                                <li>Built-in spam prevention</li>
-                                <li>Distributed trust network</li>
-                                <li>Proof-of-work sender verification</li>
-                            </ul>
-                        </section>
-
-                        <section id="implementation" class="mt-12">
-                            <h2 class="text-3xl font-bold text-gray-900">
-                                Implementation Guide
-                            </h2>
-                            <p class="mt-4">
-                                Detailed implementation guidelines and reference code examples are available to help developers integrate SMAP into their email systems.
-                            </p>
+                            <h2 class="text-3xl font-bold text-gray-900">5. Security Considerations</h2>
+                            <div class="mt-4">
+                                <h3 class="text-2xl font-bold text-gray-800">5.1 Trust Network</h3>
+                                <pre><code class="language-rust">
+struct TrustVerification {
+    sender_score: f32,
+    proof_of_work: ProofOfWork,
+    reputation_proof: ReputationProof,
+    validator_signatures: [Signature]
+}
+                                </code></pre>
+                                <p class="mt-4">
+                                    SMAP implements a distributed trust network for sender verification and
+                                    spam prevention. All messages must pass through trust verification
+                                    before delivery.
+                                </p>
+                            </div>
                         </section>
                     </div>
                 </div>
