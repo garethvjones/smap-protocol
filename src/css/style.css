@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
+    scroll-padding-top: 4rem;
 }
 
 #mobile-menu {
@@ -9,4 +9,9 @@ html {
 
 .mobile-menu-button svg {
     transition: all 0.2s ease-in-out;
+}
+
+.nav-link-active {
+    color: #4F46E5;
+    border-color: #4F46E5;
 }
